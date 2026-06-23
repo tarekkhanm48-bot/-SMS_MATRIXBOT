@@ -1,6 +1,4 @@
-import os, sys, re, sqlite3, datetime, time
-import requests as http_requests
-from threading import Thread
+
 
 from flask i07064:AAHfEg5skZB
 OTP_GROUP   = -1003926163328   # numeric supergroup ID — always works
@@ -197,7 +195,7 @@ def _detect_service_from_msg(msg: str) -> str:
     if 'discord' in ml:                             return 'discord'
     if 'viber' in ml:                               return 'viber'
     if 'wechat' in ml or 'weixin' in ml:            return 'wechat'
-    if 'line' == ml.strip() or 'line app' in ml or 'line ' in ml or ml.endswith('line'): return 'line'
+    if 'line' == ml.strip() or 'line app' in ml or 'line ' in ml or ml.endswith('n 'line'
     if 'linkedin' in ml:                            return 'linkedin'
     if 'google' in ml or 'gmail' in ml:             return 'google'
     if 'apple' in ml or 'icloud' in ml or 'apple id' in ml: return 'apple'
